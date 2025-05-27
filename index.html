@@ -66,6 +66,24 @@
     <main>
         <h1>논문을 검색해보세요 🔍</h1>
         <input type="text" placeholder="키워드 또는 논문 제목을 입력하세요">
+        <button id="searchBtn">검색</button>
+
+        <script>
+          const input = document.getElementById('searchInput');
+          const btn = document.getElementById('searchBtn');
+
+          btn.addEventListener('click', () => {
+            const query = input.value.trim();
+            if (query) {
+              // 실제 API 호출 또는 검색 결과 페이지 이동 등 처리
+              alert(`검색어: ${query} (검색 기능 연동 필요)`);
+            }
+          });
+
+          input.addEventListener('keydown', e => {
+            if (e.key === 'Enter') btn.click();
+          });
+        </script>
 
         <div class="keywords">
             추천 키워드:
