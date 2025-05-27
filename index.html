@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylit - 논문 검색</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f8fc;
+            color: #2e2e2e;
+        }
+        header {
+            background-color: #7c4dff; /* 보라색 */
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #7c4dff;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 60%;
+            max-width: 600px;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #7c4dff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .keywords {
+            font-size: 14px;
+            color: #555;
+        }
+        .keywords span {
+            background-color: #e8dcff;
+            color: #5e35b1;
+            padding: 6px 10px;
+            margin: 4px;
+            border-radius: 14px;
+            display: inline-block;
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-  <h1>내 첫 GitHub 웹사이트 🎉</h1>
-  <p>정말 잘 만들었어요!</p>
+    <header>
+        Keylit
+    </header>
+    <main>
+        <h1>논문을 검색해보세요 🔍</h1>
+        <input type="text" placeholder="키워드 또는 논문 제목을 입력하세요">
+
+        <div class="keywords">
+            추천 키워드:
+            <span>딥러닝</span>
+            <span>자연어처리</span>
+            <span>강화학습</span>
+            <span>데이터마이닝</span>
+            <span>AI</span>
+        </div>
+    </main>
+    <footer>
+        © 2025 Keylit
+    </footer>
 </body>
 </html>
