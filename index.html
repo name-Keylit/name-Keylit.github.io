@@ -219,7 +219,7 @@
       recentQueries.unshift(query);
       if (recentQueries.length > 10) recentQueries.pop();
 
-      const API_KEY = "YOUR_KCI_API_KEY"; // ← 여기에 실제 인증키 입력
+      const API_KEY = "27502279"; // ← 여기에 실제 인증키 입력
       const url = `https://api.kci.go.kr/openapi/service/rest/ArticleInfoService/getArticleList?ServiceKey=${API_KEY}&searchKeyword=${encodeURIComponent(query)}&numOfRows=10&pageNo=1`;
 
       try {
